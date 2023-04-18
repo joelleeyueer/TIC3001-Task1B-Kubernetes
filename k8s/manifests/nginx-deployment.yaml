@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: backend2
   labels:
-    app: backend
+    app: backend2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: backend
+      app: backend2
   template:
     metadata:
       labels:
-        app: backend
+        app: backend2
     spec:
       containers:
-        - name: backend
+        - name: backend2
           image: xtream662/task1b:latest
           ports:
             - name: http
